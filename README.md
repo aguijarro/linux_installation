@@ -54,11 +54,15 @@ http://www.binarytides.com/linux-commands-monitor-network/
 Additional Functionality:
 ------------------------
 
-Automatic Security Updates using GNOME Update Manager.
-   sudo apt-get install unattended-upgrades
-   sudo dpkg-reconfigure --priority=low unattended-upgrades	
+1) Automatic Security Updates using GNOME Update Manager.
 
-Server monitoring
-   sudo apt-get install bwm-ng htop pastebinit whois
-   sudo apt-get install tcptrack
+   * sudo apt-get install unattended-upgrades
+
+   * sudo dpkg-reconfigure --priority=low unattended-upgrades	
+
+2) Server monitoring
+
+   * sudo apt-get install bwm-ng htop pastebinit whois
+
+   * sudo apt-get install tcptrack
 
