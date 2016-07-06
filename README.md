@@ -6,7 +6,7 @@ description
 
 In this project you will be deploying the web application that you developed earlier for Project 3: Item Catalog. Udacity and Amazon have provided a virtual server in Amazon's Elastic Compute Cloud (EC2) for you to use for this project. When you complete the project your application will be accessible to the public!
 
-Public IP address: 
+Public IP address:
 -----------------
 52.38.67.31
 
@@ -48,8 +48,8 @@ A summary of software you installed and configuration changes made:
 
 Third-party resources you made use of to complete this project
 --------------------------------------------------------------
-http://www.binarytides.com/linux-commands-monitor-network/
-https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
+* http://www.binarytides.com/linux-commands-monitor-network/
+* https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
 
 
 Additional Functionality:
@@ -59,7 +59,7 @@ Additional Functionality:
 
    * sudo apt-get install unattended-upgrades
 
-   * sudo dpkg-reconfigure --priority=low unattended-upgrades	
+   * sudo dpkg-reconfigure --priority=low unattended-upgrades
 
 2) Server monitoring
 
@@ -79,8 +79,10 @@ Configuration pg_hba.conf:
 Steps for configuration of users in Postgres:
 --------------------------------------------
 
-sudo -u postgres createuser -P -s -e catalogdb
-CREATE DATABASE catalogdb WITH OWNER catalogdb;
+* sudo -u postgres createuser -P -s -e catalogdb
+* CREATE DATABASE catalogdb WITH OWNER catalogdb;
+* sudo -u postgres createuser -P -s -e catalogdb
+
 
 
 Myapp.wsgi file:
@@ -104,8 +106,6 @@ if os.path.exists('.env'):
 from app import app as application
 
 
-* Add in app/__init__.py line
+* Add in app/__init__.py this line:
+
 app = create_app('default')
-
-
-
